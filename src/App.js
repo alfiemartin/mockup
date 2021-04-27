@@ -1,6 +1,4 @@
-import logo from "./logo.svg";
 import "./App.scss";
-// import sideImage from "../public/";
 
 function App() {
   return (
