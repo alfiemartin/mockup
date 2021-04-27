@@ -1,13 +1,18 @@
 import "./App.scss";
+// import sideImage from "./images/thumbnail_Sideimage.jpg";
 
 function App() {
   return (
     <div className="App">
       <div className="sideContainer">
-        <img src="/thumbnail_Sideimage.jpg" alt="" className="logo" />
+        <img
+          src={process.env.PUBLIC_URL + "/thumbnail_Sideimage.jpg"}
+          alt=""
+          className="logo"
+        />
       </div>
       <main className="signupContainer">
-        <img src="/thumbnail_Logo.png" alt="" />
+        <img src={process.env.PUBLIC_URL + "/thumbnail_Logo.png"} alt="" />
         <form action="">
           <div className="emailContainer">
             <label htmlFor="" className="emailLabel">
