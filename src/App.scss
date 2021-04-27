@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.sideContainer {
+  width: 50%;
+
+  & > .logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  & > img {
+    width: 400px;
+  }
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 130px;
+
+  @media only screen and (max-width: 1160px) {
+    width: 70%;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  & > button {
+    // width: 100px;
+    display: grid;
+    place-items: center;
+    // height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: rgb(0, 94, 184);
+    border: none;
+    border-radius: 5px;
+    color: rgb(232, 238, 246);
+    font-weight: bold;
+
+    & > span {
+      padding: 10px;
+    }
+  }
+}
+
+.passwordLabelContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.emailLabel,
+.passwordLabel {
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.forgotPasswordLabel {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+input {
+  outline-color: rgb(0, 43, 184);
+  border: 2px solid rgb(0, 94, 184);
+  border-radius: 5px;
+  height: 30px;
+  // text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .sideContainer {
+    display: none;
+  }
+
+  button {
+    width: 100% !important;
+  }
+}
